@@ -1,0 +1,116 @@
+/* Base Styles */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f4f7fa; /* Light background */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+}
+
+/* Container for Centered Content */
+.container {
+  max-width: 800px;
+  margin: 20px auto;
+  padding: 20px;
+}
+
+/* Header Styling */
+h1 {
+  color: #3b82f6; /* Tailwind blue-500 */
+  font-size: 2.5rem;
+  font-weight: bold;
+  text-align: center;
+  margin-bottom: 1.5rem;
+}
+
+/* Current Price Card */
+.current-price-card {
+  background-color: #eef6ff;
+  color: #1d4ed8; /* Tailwind blue-700 */
+  padding: 16px;
+  margin-bottom: 24px;
+  border-radius: 10px;
+  border: 1px solid #dbeafe; /* Light blue border */
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.08);
+  text-align: center;
+}
+
+.current-price-text {
+  font-size: 1.25rem;
+  font-weight: 500;
+}
+
+.current-price-amount {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #1e40af; /* Darker blue */
+  margin-top: 8px;
+}
+
+/* Table Styling */
+table {
+  width: 100%;
+  border-collapse: collapse;
+  background: white;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 16px;
+}
+
+table th, table td {
+  padding: 12px;
+  border-bottom: 1px solid #e0e0e0; /* Light gray borders */
+}
+
+table th {
+  background-color: #3b82f6; /* Blue background for header */
+  color: white;
+  font-weight: bold;
+  text-align: left;
+}
+
+th.price-header {
+  text-align: right;
+  padding-right: 16px;
+}
+
+td.price-cell {
+  text-align: right;
+  padding-right: 16px; 
+}
+
+table td {
+  color: #333;
+}
+
+table tr:nth-child(even) {
+  background-color: #f9fafb; /* Alternating row color */
+}
+
+/* Price Cell */
+.price-cell {
+  text-align: right;
+  font-weight: 500;
+  color: #1d4ed8; /* Consistent blue color for prices */
+}
+
+/* Responsiveness for Small Screens */
+@media (max-width: 600px) {
+  .container {
+    padding: 12px;
+  }
+
+  table th, table td {
+    padding: 8px;
+  }
+
+  h1 {
+    font-size: 1.75rem;
+  }
+
+  .current-price-amount {
+    font-size: 2rem;
+  }
+}
